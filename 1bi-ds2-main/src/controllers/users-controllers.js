@@ -7,15 +7,15 @@ class UsersController {
         console.log('UsersController/cadastrar');
 
         const userBody = req.body;
-        const senha = bcrypt.hashSync(userBody.senha, 10); 
-        
+        const senha = bcrypt.hashSync(userBody.senha, 10);
+
         const user = {
             nome: userBody.nome,
             email: userBody.email,
-            senha      
+            senha
         }
 
-        users.push(user);  // salvando no banco
+        users.push(user); // salvando no banco
 
         console.log({ users });
         res.redirect('/');
@@ -36,7 +36,7 @@ class UsersController {
         } else {
             return res.send('Senha nao confere...');
         }
-        
+
     }
 }
 

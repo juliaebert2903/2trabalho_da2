@@ -1,4 +1,3 @@
-
 const express = require('express');
 const app = express();
 
@@ -29,9 +28,8 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/', (req, res) => {
-    res.send('/login')
-});
+const usersRoutes = require('./routes/users-routes');
+app.use('/users', usersRoutes);
 
 const gruposRoutes = require('./routes/Grupos-Routes.js');
 app.use('/grupos', gruposRoutes);

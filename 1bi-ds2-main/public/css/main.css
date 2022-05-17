@@ -1,38 +1,31 @@
 header {
-
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-header > img {
+header>img {
     max-height: 280px;
     margin: -45px;
 }
 
-header > div {
+header>div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
- 
 }
 
-header > div > span {
-    
+header>div>span {
     color: #294858 !important;
     font-size: 18px;
     margin-left: 5px;
     margin-right: 5px;
-
 }
 
-
-header > div > a {
-
-        color: #83949c;
-        font-weight: 600;
-
+header>div>a {
+    color: #83949c;
+    font-weight: 600;
 }
 
 main {
@@ -43,7 +36,6 @@ main {
     width: 100%;
 }
 
-
 .containerpesquisahome {
     display: flex;
     width: 100%;
@@ -53,14 +45,13 @@ main {
     margin-top: 30px;
 }
 
-.containerpesquisahome > form {
+.containerpesquisahome>form {
     display: flex;
 }
 
-.containerpesquisahome > form > input {
+.containerpesquisahome>form>input {
     margin-right: 10px;
 }
-
 
 .containergrupos {
     width: 70%;
@@ -68,8 +59,7 @@ main {
     flex-direction: column;
 }
 
-
-.grupolista{
+.grupolista {
     width: 100%;
     min-height: 70px;
     background-color: #294858;
@@ -82,45 +72,44 @@ main {
     padding-right: 15px;
 }
 
-.grupolista > :nth-child(2n) {
-        width: 60%;
-        display: flex;
-
+.grupolista> :nth-child(2n) {
+    width: 60%;
+    display: flex;
 }
 
-.grupolista > :nth-child(2n -1) {
-        width: 20%;
+.grupolista> :nth-child(2n -1) {
+    width: 20%;
 }
 
-
-.grupolista > :last-child {
+.grupolista> :last-child {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.grupolista  > :first-child > span > i{
+.grupolista> :first-child>span>i {
     color: white;
     font-size: 26px;
 }
 
-
-.grupolista > :nth-child(2n) > span {
-        font-size: 16px;
-        color: white;
-
+.grupolista> :nth-child(2n)>span {
+    font-size: 16px;
+    color: white;
 }
 
-
-
-.grupolista > :last-child > a {
-        font-size: 16px;
-        color: white;
+.grupolista> :last-child>a {
+    font-size: 16px;
+    color: white;
 }
 
 h1 {
     font-size: 16px;
     text-align: center;
-    background-color: #294858;
+    color: #294858;
+}
+
+form {
+    text-align: center;
+    border: 2px;
+    border-radius: 2px;
 }
